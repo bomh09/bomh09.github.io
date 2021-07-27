@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.header {
+    margin-top: 30px;
+}
+
+.header h2 {
+    color: #309FB5;
+    margin-top: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.time {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #7652b5;
+}
+
+#time {
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.statistical {
+    margin-top: 30px !important;
+    justify-content: space-evenly;
+}
+
+.totalCases,
+.totalRecovered,
+.totalDeaths {
+    padding: 50px 20px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.totalCases span,
+.totalRecovered span,
+.totalDeaths span {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.totalCases {
+    color: #186FB5;
+}
+
+.totalRecovered {
+    color: #006233;
+}
+
+.totalDeaths {
+    color: #E41E20;
+}
+
+.data-city {
+    margin-top: 30px !important;
+}
+
+.data-city table td,
+.data-city table th {
+    border: 2px solid #ddd;
+    padding: 10px;
+}
+
+#data-table td:nth-child(2) {
+    font-weight: bold;
+    color: #186fb5;
+    text-align: center;
+}
+
+#data-table td:nth-child(3) {
+    font-weight: bold;
+    color: #006233;
+    text-align: center;
+}
+
+#data-table td:nth-child(4) {
+    font-weight: bold;
+    color: #e41e20;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 30px;
+    padding: 20px 0;
+    text-align: center;
+    font-style: italic;
+}
+
+.footer a {
+    text-decoration: none;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid VN API</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+</head>
+<body>
+    <div class="text-center header">
+        <img src="./assets/images/corona.png" alt="Virus Corona" width="80px" height="80px">
+        <h2>Thống kê Covid-19 tại Việt Nam</h2>
+    </div>
+
+    <!-- Time -->
+    <div class="text-center time">
+        <div id="time"></div>(UTC+7)
+    </div>
+
+    <div class="statistical grid wide">
+        <div class="row">
+            <div class="totalCases col c-12 m-4 l-4"></div>
+            <div class="totalRecovered col c-12 m-4 l-4"></div>
+            <div class="totalDeaths col c-12 m-4 l-4"></div>   
+        </div>
+    </div>
+
+    <div class="data-city grid wide">
+        <div class="row">
+            <div class="col c-12 m-12 l-12">
+                <table style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Tỉnh/Thành phố</th>
+                            <th>Số ca nhiễm</th>
+                            <th>Số ca hồi phục</th>
+                            <th>Số ca tử vong</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data-table"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright &copy; by <a href="https://www.facebook.com/profile.php?id=100005752721546" target="_blank">Hoài Nguyễn</a></p>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
