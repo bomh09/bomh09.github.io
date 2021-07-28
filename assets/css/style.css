@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -71,13 +71,24 @@ body {
 
 .data-city {
     margin-top: 30px !important;
+    padding: 0 5px !important;
 }
+
 
 .data-city table td,
 .data-city table th {
-    border: 2px solid #ddd;
+    border: 1px solid #309FB5;
     padding: 10px;
 }
+
+#data-table td {
+    border-bottom: none;
+}
+
+#data-table tr:last-child {
+    border-bottom: 1px solid #309FB5;
+}
+
 
 #data-table td:nth-child(2) {
     font-weight: bold;
@@ -120,9 +131,9 @@ body {
 }
 
 #table-city tbody tr {
-     display: table;
-     table-layout: fixed;
-     width: 100%;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
 }
 
 .footer {
