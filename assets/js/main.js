@@ -39,12 +39,15 @@ function getApiVietnamese() {
 //   });
 
 function renderApiVietnamese(totalCases, totalRecovered, totalDeaths) {
-  document.querySelector(".totalCases").innerHTML =
-    "<span>Số ca nhiễm </span>" + Intl.NumberFormat().format(totalCases);
-  document.querySelector(".totalRecovered").innerHTML =
-    "<span>Số ca hồi phục </span>" + Intl.NumberFormat().format(totalRecovered);
-  document.querySelector(".totalDeaths").innerHTML =
-    "<span>Số ca tử vong </span>" + Intl.NumberFormat().format(totalDeaths);
+  document.querySelector(".totalCases").innerHTML = `
+  <h3>Số ca nhiễm </h3>
+  <h1>${Intl.NumberFormat().format(totalCases)}</h1>`;
+  document.querySelector(".totalRecovered").innerHTML = `
+  <h3>Số ca hồi phục </h3>
+  <h1>${Intl.NumberFormat().format(totalRecovered)}</h1>`;
+  document.querySelector(".totalDeaths").innerHTML = `
+  <h3>Số ca tử vong </h3>
+  <h1>${Intl.NumberFormat().format(totalDeaths)}</h1>`;
 }
 
 function getDataCity(data) {
@@ -85,3 +88,40 @@ setInterval(function () {
   ].join(" ");
   document.querySelector("#time").innerHTML = strDateTime;
 }, 1000);
+
+// scroll top
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 200) {
+    $('.scroll-top').fadeIn();
+  }else {
+    $('.scroll-top').fadeOut();
+  }
+});
+
+$('.scroll-top').click(function() {
+  $('html, body').animate({scrollTop: 0}, 1000);
+});
+
+// search table data city
+document.querySelector("#search").onkeyup = function() {
+  var input = document.querySelector("#search");
+  var filter = input.value.toUpperCase();
+  var table = document.querySelector("#table-city");
+  var tr = table.getElementsByTagName("tr");
+
+  for (var i = 0; i < tr.length; i++) {
+    var td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      var txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+};
+
+
+var scrollTable = document.querySelector("#table-city");
+scrollTable.scrollTop = scrollTable.scrollHeight; 
