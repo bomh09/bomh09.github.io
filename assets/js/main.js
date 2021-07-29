@@ -1,4 +1,4 @@
-var apiVietnamese = "https://api-kent.netlify.app/.netlify/functions/api";
+var apiVietnamese = "https://api-kent.netlify.app/.netlify/functions/api/vn";
 
 function start() {
   getApiVietnamese(getDataCity);
@@ -121,7 +121,3 @@ document.querySelector("#search").onkeyup = function() {
     }
   }
 };
-
-
-var scrollTable = document.querySelector("#table-city");
-scrollTable.scrollTop = scrollTable.scrollHeight; 
