@@ -193,3 +193,25 @@ body {
 .search-city input:focus {
     outline: none;
 }
+
+.th-city:hover,
+.numeric-sort:hover {
+    cursor: pointer;
+}
+
+.th-city::after,
+.numeric-sort::after {
+    content: "\296F";
+    padding-left: 5px;
+}
+
+
+.th-city[data-sort-direction="1"]::after,
+.numeric-sort[data-sort-direction = "1"]::after {
+    content: "\25B4";
+}
+
+.th-city[data-sort-direction="-1"]::after,
+.numeric-sort[data-sort-direction="-1"]::after {
+    content: "\25BE";
+}

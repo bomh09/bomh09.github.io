@@ -37,13 +37,13 @@
                 <div class="search-city">
                     <input type="text" id="search" placeholder="Tìm kiếm Tỉnh / Thành phố...">
                 </div>
-                <table id="table-city">
-                    <thead>
+                <table id="table-city" class="sort-table">
+                    <thead class="thead-city">
                         <tr>
-                            <th>Tỉnh/Thành phố</th>
-                            <th>Số ca nhiễm</th>
-                            <th>Số ca hồi phục</th>
-                            <th>Số ca tử vong</th>
+                            <th class="th-city" id="th-city">Tỉnh/Thành phố</th>
+                            <th class="numeric-sort" id="th-cases">Số ca nhiễm</th>
+                            <th class="numeric-sort" id="th-recovered">Số ca hồi phục</th>
+                            <th class="numeric-sort" id="th-deaths">Số ca tử vong</th>
                         </tr>
                     </thead>
                     <tbody id="data-table"></tbody>
