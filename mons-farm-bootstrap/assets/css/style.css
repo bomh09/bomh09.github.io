@@ -1,0 +1,417 @@
+a:hover {
+    text-decoration: none !important;
+}
+
+/* header top */
+
+.header-top nav a {
+    color: #333;
+    font-size: 14px;
+    padding: 0 5px;
+    border-left: 1px solid #333;
+}
+
+.header-top nav a:first-child {
+    border-left: none;
+    text-decoration: underline;
+}
+
+.header-bottom nav a {
+    color: #333;
+}
+
+.mobile-menu .bar {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+/* banner */
+
+#banner {
+    position: relative;
+}
+
+.carousel-inner {
+    overflow: unset !important;
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    padding: 0 !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 20 !important;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    transform: translateY(-50%);
+    width: 50%;
+}
+
+.banner-text .banner-title {
+    font-size: 78px;
+}
+
+.banner-text .banner-button a {
+    color: #fff;
+    padding: 8px 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.banner-text .banner-button a:first-child {
+    background: transparent;
+    border: 1px solid #fff;
+    margin-right: 10px;
+}
+
+.banner-text .banner-button a:last-child {
+    background: #f18a77;
+    border: 1px solid #f18a77;
+}
+
+.banner-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 15;
+}
+
+.banner-image .board {
+    position: absolute;
+    bottom: -20px;
+    right: 50px;
+    width: 580px;
+}
+
+.banner-image .jar {
+    position: absolute;
+    bottom: 20px;
+    right: 150px;
+    width: 220px;
+}
+
+.banner-image .lemon {
+    position: absolute;
+    bottom: 20px;
+    right: 300px;
+    width: 200px;
+    z-index: 1;
+}
+
+/* welcome */
+
+#welcome {
+    background-image: url(../images/bg.png);
+    padding: 70px 0;
+    text-align: center;
+}
+
+.welcome-logo {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    color: #5e524d;
+}
+
+.welcome-desc {
+    width: 75%;
+    margin: 0 auto;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+.welcome-button a {
+    display: inline-block;
+    padding: 8px 30px;
+    text-transform: uppercase;
+}
+
+.welcome-button a:first-child {
+    color: #fff;
+    background-color: #f18a77;
+    border: 1px solid #f18a77;
+    margin-right: 10px;
+}
+
+.welcome-button a:last-child {
+    color: #83a92c;
+    background: transparent;
+    border: 1px solid #83a92c;
+}
+
+/* feature product */
+
+#feature {
+    background-image: url(../images/feature/bg-feature.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 250px;
+    padding-bottom: 70px;
+}
+
+.feature-desc {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 2;
+}
+
+.product-name {
+    font-size: 18px;
+    color: #5e524d;
+}
+
+.feature-btn {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    background: #f18a77;
+    border: 1px solid #f18a77;
+}
+
+.feature-btn:hover {
+    color: #fff;
+}
+
+.product-item {
+    padding-bottom: 30px;
+}
+
+/* news health */
+#news {
+    background-image: url(../images/bg.png);
+    padding: 70px 0;
+    position: relative;
+}
+
+.news-content {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.news-content .news-title {
+    font-size: 18px;
+    margin: 0;
+}
+
+.news-content .news-title a {
+    color: #5e524d;
+}
+
+.news-content .news-top span a{
+    color: #666;
+}
+
+.news-desc {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #333;
+    text-align: justify;
+}
+
+.news-bottom a {
+    color: #83a92c;
+}
+
+.leaf {
+    position: absolute;
+    top: -120px;
+    right: 100px;
+}
+
+/* contact us */
+
+#contact {
+    color: #fff;
+    padding: 70px 0;
+    background: linear-gradient(to top, rgba(131, 169, 44, 0.85), rgba(131, 169, 44, 0.85)),
+    url(../images/bg-contact.png);
+}
+
+#contact .section-title {
+    color: #fff;
+}
+
+.contact-info span {
+    display: block;
+    font-weight: 600;
+}
+
+.contact-phone a,
+.contact-email a {
+    color: #fff;
+}
+
+.social a {
+    margin-right: 20px;
+    color: #fff;
+}
+
+.social i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+}
+
+.social-fb i{
+    background-color: #3a589b;
+}
+
+.social-yt i{
+    background-color: #cf3427;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: 600;
+}
+
+input.form-control {
+    margin-bottom: 30px;
+}
+
+input[type="submit"] {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #5e524d;
+    padding: 5px 25px;
+    border: none;
+    letter-spacing: 1px;
+}
+
+/* footer */
+#footer {
+    padding: 40px 0;
+}
+
+.footer-menu a {
+    color: #5e524d;
+    padding: 0 4px;
+    border-left: 1px solid;
+    font-size: 14px
+}
+
+.footer-menu li:first-child a {
+    border-left: none;
+}
+
+/* responsive */
+
+@media (max-width: 1199.98px) {
+    .banner-text {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+
+    .header-bottom .navbar .nav {
+        justify-content: space-between !important;
+    }
+
+    .header-bottom .nav-link {
+        padding: 8px 12px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+    
+    .banner-text .banner-title {
+        font-size: 50px ;
+    }
+
+    .header-bottom .navbar {
+        flex-direction: column;
+    }
+
+    #feature {
+        padding-top: 150px;
+    }
+
+    .leaf {
+        width: 200px;
+        right: 50px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+    .leaf {
+        width: 300px;
+        right: 50px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .banner-text .banner-title {
+        font-size: 30px;
+    }
+
+    .banner-text .banner-description {
+        display: none;
+    }
+
+    .banner-text .banner-button a {
+        padding: 3px 15px;
+    }
+
+    .section-title {
+        font-size: 35px;
+        font-weight: 600;
+    }
+    
+    .welcome-desc {
+        width: 100%;
+    }
+
+    #feature {
+        padding-top: 100px;
+    }
+
+    .feature-desc {
+        width: 100%;
+    }
+
+    .product-name {
+        padding-top: 30px;
+    }
+
+    .leaf {
+        width: 150px;
+        right: 0;
+        top: -50px;
+    }
+
+    .header-bottom .nav-link {
+        color: #83a92c;
+    }
+
+    .navbar-collapse.show {
+        transition: all, 0.3s;
+    }
+
+    .welcome-button a {
+        padding: 5px 15px !important;
+    }
+}
