@@ -3,12 +3,18 @@ a:hover {
 }
 
 @font-face {
-    font-family: "Myriad Pro";
-    src: url(../fonts/MYRIADPRO-REGULAR.OTF);
+    font-family: "UVNGiongSong";
+    src: url(../fonts/UVNGiongSong_R.TTF);
+}
+
+@font-face {
+    font-family: "UTM American Sans";
+    src: url(../fonts/UTM\ American\ Sans.ttf);
 }
 
 body {
-    font-family: "Myriad Pro" !important;
+  font-family: "Open Sans",
+  "sans-serif" !important;
     color: #5e524d;
 }
 
@@ -16,6 +22,7 @@ body {
 nav {
     padding: 0 !important;
 }
+
 /* header top */
 
 .header-top nav a {
@@ -23,6 +30,9 @@ nav {
     font-size: 14px;
     padding: 0 5px;
     border-left: 1px solid #333;
+    font-weight: 600;
+    font-family: 'Open Sans',
+    sans-serif;
 }
 
 .header-top nav a:first-child {
@@ -32,6 +42,7 @@ nav {
 
 .header-bottom nav a {
     color: #333;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
 
@@ -44,6 +55,7 @@ nav {
     transition: all 0.3s;
     border-radius: 10px;
 }
+
 /* banner */
 
 #banner {
@@ -77,6 +89,11 @@ nav {
 
 .banner-text .banner-title {
     font-size: 78px;
+    font-family: "UTM American Sans";
+}
+
+.banner-text .banner-description {
+    font-family: "UVNGiongSong";
 }
 
 .banner-text .banner-button a {
@@ -85,6 +102,7 @@ nav {
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-family: "UVNGiongSong";
 }
 
 .banner-text .banner-button a:first-child {
@@ -145,6 +163,7 @@ nav {
     font-weight: 300;
     margin-bottom: 30px;
     color: #5e524d;
+    font-family: "UVNGiongSong";
 }
 
 .welcome-desc {
@@ -152,12 +171,14 @@ nav {
     margin: 0 auto;
     line-height: 2;
     margin-bottom: 50px;
+    font-family: "Open Sans", "sans-serif";
 }
 
 .welcome-button a {
     display: inline-block;
     padding: 5px 30px;
     text-transform: uppercase;
+    font-family: "UVNGiongSong";
 }
 
 .welcome-button a:first-child {
@@ -189,6 +210,7 @@ nav {
     text-align: center;
     margin-bottom: 50px;
     line-height: 2;
+    font-family: "Open Sans", "sans-serif";
 }
 
 .product-name {
@@ -197,6 +219,9 @@ nav {
     font-weight: 600;
     padding-top: 10px;
     position: relative;
+    font-family: "Open Sans",
+    "sans-serif";
+    font-weight: 600;
 }
 
 .product-name::after {
@@ -221,6 +246,7 @@ nav {
     padding: 5px 20px;
     background: #f18a77;
     border: 1px solid #f18a77;
+    font-family: "UVNGiongSong";
 }
 
 .feature-btn:hover {
@@ -247,10 +273,15 @@ nav {
 
 .news-content .news-title a {
     color: #5e524d;
+    font-family: "Open Sans",
+    "sans-serif";
+    font-weight: 600;
 }
 
-.news-content .news-top span a{
+.news-content .news-top span a {
     color: #666;
+    font-family: "Open Sans",
+    "sans-serif";
 }
 
 .news-desc {
@@ -258,10 +289,15 @@ nav {
     margin-top: 10px;
     color: #333;
     text-align: justify;
+    font-family: "Open Sans",
+    "sans-serif";
 }
 
 .news-bottom a {
     color: #83a92c;
+    font-family: "Open Sans",
+    "sans-serif";
+    font-weight: 600;
 }
 
 .leaf {
@@ -277,7 +313,7 @@ nav {
     color: #fff;
     padding: 50px 0;
     background: linear-gradient(to top, rgba(131, 169, 44, 0.85), rgba(131, 169, 44, 0.85)),
-    url(../images/bg-contact.png);
+        url(../images/bg-contact.png);
 }
 
 #contact .section-title {
@@ -313,11 +349,11 @@ nav {
     font-size: 24px;
 }
 
-.social-fb i{
+.social-fb i {
     background-color: #3a589b;
 }
 
-.social-yt i{
+.social-yt i {
     background-color: #cf3427;
 }
 
@@ -338,6 +374,7 @@ input[type="submit"] {
     padding: 5px 35px;
     border: none;
     letter-spacing: 1px;
+    font-family: "UVNGiongSong";
 }
 
 /* footer */
@@ -375,9 +412,9 @@ input[type="submit"] {
 }
 
 @media (min-width: 768px) and (max-width: 1023.98px) {
-    
+
     .banner-text .banner-title {
-        font-size: 50px ;
+        font-size: 50px;
     }
 
     .header-bottom .navbar {
@@ -418,7 +455,7 @@ input[type="submit"] {
         font-size: 35px;
         font-weight: 600;
     }
-    
+
     .welcome-desc {
         width: 100%;
     }
