@@ -181,34 +181,36 @@ nav {
 
 #welcome {
     background-image: url(../images/bg.png);
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 120px;
     text-align: center;
 }
 
 .welcome-logo {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .section-title {
     text-align: center;
     font-size: 50px;
     font-weight: 300;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     color: #5e524d;
     font-family: "UVNGiongSong";
 }
 
 .welcome-desc {
-    width: 75%;
+    width: 65%;
     margin: 0 auto;
     line-height: 2;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     font-family: "Open Sans", "sans-serif";
+    font-size: 18px;
 }
 
 .welcome-button a {
     display: inline-block;
-    padding: 5px 30px;
+    padding: 10px 30px;
     text-transform: uppercase;
     font-family: "UVNGiongSong";
 }
@@ -232,15 +234,15 @@ nav {
     background-image: url(../images/feature/bg-feature.png);
     background-size: contain;
     background-repeat: no-repeat;
-    padding-top: 200px;
-    padding-bottom: 70px;
+    padding-top: 250px;
+    padding-bottom: 110px;
 }
 
 .feature-desc {
     width: 75%;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     line-height: 2;
     font-family: "Open Sans", "sans-serif";
 }
@@ -272,13 +274,15 @@ nav {
     height: 180px;
 }
 
-.feature-btn {
+.feature-btn a {
     color: #fff;
     text-transform: uppercase;
-    padding: 5px 20px;
+    padding: 10px 20px;
     background: #f18a77;
     border: 1px solid #f18a77;
     font-family: "UVNGiongSong";
+    display: inline-block;
+    margin-top: 100px;
 }
 
 .feature-btn:hover {
@@ -289,8 +293,8 @@ nav {
 #news {
     background-image: url(../images/bg.png);
     position: relative;
-    padding-top: 70px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 70px;
 }
 
 .news-content {
@@ -299,7 +303,7 @@ nav {
 }
 
 .news-content .news-title {
-    font-size: 18px;
+    font-size: 24px;
     margin: 0;
 }
 
@@ -353,7 +357,7 @@ nav {
 
 #contact {
     color: #fff;
-    padding: 50px 0;
+    padding: 80px 0;
     background: linear-gradient(to top, rgba(131, 169, 44, 0.85), rgba(131, 169, 44, 0.85)),
         url(../images/bg-contact.png);
 }
