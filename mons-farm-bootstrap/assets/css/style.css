@@ -113,6 +113,7 @@ nav {
     left: 200px;
     transform: translateY(-50%);
     width: 50%;
+    z-index: 100;
 }
 
 .banner-text .banner-title {
@@ -315,16 +316,26 @@ nav {
     "sans-serif";
 }
 
-.news-desc {
+.news-image img {
+    display: block;
+    width: 100%;
+}
+
+.news-desc a {
     font-size: 14px;
     margin-top: 10px;
     color: #333;
     text-align: justify;
     font-family: "Open Sans",
     "sans-serif";
+    display: block;
 }
 
-.news-bottom a {
+.news-desc a:hover {
+    color: #333;
+}
+
+.news-bottom .read-more {
     color: #83a92c;
     font-family: "Open Sans",
     "sans-serif";
@@ -384,8 +395,21 @@ nav {
     background-color: #3a589b;
 }
 
+.social-fb:hover i {
+    background-color: #fff;
+}
+
 .social-yt i {
     background-color: #cf3427;
+}
+
+.social-yt:hover i {
+    background-color: #fff;
+    color: #cf3427;
+}
+
+.social-yt:hover a {
+    color: #cf3427;
 }
 
 .contact-form label {
@@ -545,7 +569,7 @@ input[type="submit"] {
     .header-bottom .navbar-nav {
         position: absolute;
         left: -100%;
-        top: 118px;
+        top: 140px;
         background:rgba(131, 169, 44, 0.85);
         width: 100%;
         align-items: center;
