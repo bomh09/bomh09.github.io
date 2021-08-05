@@ -25,52 +25,58 @@
     <div id="wrapper">
         <!-- header -->
         <div id="header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-                        <div class="header-top">
-                            <nav class="navbar justify-content-end">
-                                <a href="#">English</a>
-                                <a href="#">Tiếng Việt</a>
-                                <a href="#">中国</a>
-                            </nav>
-                        </div>
+            <div class="header-top">
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <nav class="navbar justify-content-end">
+                            <a href="#">English</a>
+                            <a href="#">Tiếng Việt</a>
+                            <a href="#">中国</a>
+                        </nav>
+                        <!-- <div class="header-top">
+                        </div> -->
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-                        <div class="header-bottom">
-                            <nav class="navbar flex-md-nowrap">
+            </div>
 
-                                <!-- Navbar brand -->
-                                 <a href="./" class="navbar-brand">
-                                     <img src="./assets/images/logo.png" alt="">
-                                 </a>
-
-                                <!-- Collapse button -->
-                                <button class="navbar-toggler toggler-example d-md-none" type="button" data-toggle="collapse"
-                                    data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
-                                    aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
-                                            class="fa fa-bars"></i></span></button>
-
-                                <!-- Collapsible content -->
-                                <div class="collapse navbar-collapse d-md-block" id="navbarSupportedContent1">
-
-                                    <!-- Links -->
-                                    <ul class="navbar-nav mr-auto flex-md-row justify-content-md-between align-items-center">
-                                         <li class="nav-item"><a class="nav-link" href="#">About Mon’s Farm</a></li>
-                                         <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
-                                         <li class="nav-item"><a class="nav-link" href="#">Health News</a></li>
-                                         <li class="nav-item"><a class="nav-link" href="#">Promotion</a></li>
-                                         <li class="nav-item"><a class="nav-link" href="#">Testimonial</a></li>
-                                         <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
-                                    </ul>
-                                    <!-- Links -->
-
-                                </div>
-                                <!-- Collapsible content -->
-                            </nav>
-                        </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar flex-md-nowrap flex-fill">
+                            <!-- Navbar brand -->
+                             <a href="./" class="navbar-brand">
+                                 <img src="./assets/images/logo.png" alt="">
+                             </a>
+    
+                            <!-- Collapse button -->
+                            <!-- <button class="navbar-toggler toggler-example d-md-none" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+                                aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+                                        class="fa fa-bars"></i></span></button> -->
+                            
+                            <div class="toggle-bar float-right">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+    
+                            <!-- Collapsible content -->
+                            <ul class="navbar-nav flex-md-row justify-content-end">
+                                 <li class="nav-item"><a class="nav-link" href="#">About Mon’s Farm</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="#">Health News</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="#">Promotion</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="#">Testimonial</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
+                            </ul>
+    
+                            <!-- <div class="collapse navbar-collapse d-md-block" id="navbarSupportedContent1">
+    
+                            </div> -->
+                            <!-- Collapsible content -->
+                        </nav>
+                        <!-- <div class="header-bottom flex-fill">
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -404,12 +410,14 @@
     </div>
 
     <script type="text/javascript">
-        var mobileMenu = document.querySelector(".navbar-toggler");
-        var i = document.querySelector(".fa-bars");
+        var mobileMenu = document.querySelector(".header-bottom .toggle-bar");
+        var nav = document.querySelector(".header-bottom .navbar-nav");
+
+        console.log(mobileMenu, nav);
 
         mobileMenu.addEventListener("click", function () {
-            i.classList.toggle("fa-bars");
-            i.classList.toggle("fa-times");
+            mobileMenu.classList.toggle("active");
+            nav.classList.toggle("active");
         });
     </script>
 </body>

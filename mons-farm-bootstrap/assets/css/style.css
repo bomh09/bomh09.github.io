@@ -44,9 +44,23 @@ nav {
     color: #333;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
+    padding: 8px 20px !important;
 }
 
-.mobile-menu .bar {
+.header-bottom nav .nav-link:hover {
+    color: #83a92c;
+}
+
+.header-bottom li:last-child a {
+    padding-right: 0 !important;
+}
+
+.toggle-bar {
+    display: none;
+    margin-right: 20px;
+}
+
+.toggle-bar .bar {
     display: block;
     width: 30px;
     height: 4px;
@@ -54,6 +68,20 @@ nav {
     margin: 4px 0;
     transition: all 0.3s;
     border-radius: 10px;
+}
+
+.toggle-bar.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.toggle-bar.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    transition: all 0.3s;
+}
+
+.toggle-bar.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    transition: all 0.3s;
 }
 
 /* banner */
@@ -82,7 +110,7 @@ nav {
 .banner-text {
     position: absolute;
     top: 50%;
-    left: 150px;
+    left: 200px;
     transform: translateY(-50%);
     width: 50%;
 }
@@ -90,15 +118,18 @@ nav {
 .banner-text .banner-title {
     font-size: 78px;
     font-family: "UTM American Sans";
+    margin-bottom: 30px;
 }
 
 .banner-text .banner-description {
     font-family: "UVNGiongSong";
+    margin: 0 auto 40px;
+    width: 50%;
 }
 
 .banner-text .banner-button a {
     color: #fff;
-    padding: 3px 30px;
+    padding: 8px 30px;
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -126,21 +157,21 @@ nav {
 .banner-image .board {
     position: absolute;
     bottom: -20px;
-    right: 50px;
+    right: 150px;
     width: 580px;
 }
 
 .banner-image .jar {
     position: absolute;
     bottom: 20px;
-    right: 150px;
+    right: 250px;
     width: 220px;
 }
 
 .banner-image .lemon {
     position: absolute;
     bottom: 20px;
-    right: 300px;
+    right: 400px;
     width: 200px;
     z-index: 1;
 }
@@ -402,6 +433,10 @@ input[type="submit"] {
         width: 80%;
     }
 
+    .banner-text .banner-description {
+        width: 100%;
+    }
+
     .header-bottom .navbar .nav {
         justify-content: space-between !important;
     }
@@ -410,6 +445,8 @@ input[type="submit"] {
         padding: 8px 12px !important;
     }
 }
+
+/* tablet */
 
 @media (min-width: 768px) and (max-width: 1023.98px) {
 
@@ -431,6 +468,7 @@ input[type="submit"] {
     }
 }
 
+/* lg */
 @media (min-width: 1024px) and (max-width: 1199.98px) {
     .leaf {
         width: 300px;
@@ -438,6 +476,8 @@ input[type="submit"] {
     }
 }
 
+
+/* mobile */
 @media (max-width: 767.98px) {
     .banner-text .banner-title {
         font-size: 30px;
@@ -479,14 +519,63 @@ input[type="submit"] {
     }
 
     .header-bottom .nav-link {
-        color: #83a92c;
-    }
-
-    .navbar-collapse.show {
-        transition: all, 0.3s;
+        color: #fff;
     }
 
     .welcome-button a {
         padding: 5px 15px !important;
+    }
+
+    .header-bottom li:last-child a {
+        padding-right: 20px !important;
+    }
+
+    .header-bottom nav .nav-link {
+        padding: 12px 20px !important;
+    }
+
+    .header-bottom nav .nav-link:hover {
+        color: #5e524d;
+    }
+
+    .toggle-bar {
+        display: block;
+    }
+
+    .header-bottom .navbar-nav {
+        position: fixed;
+        right: -100vw;
+        top: 119px;
+        background:rgba(131, 169, 44, 0.85);
+        width: 100%;
+        align-items: center;
+        z-index: 100;
+        transition: all 0.3s;
+    }
+
+    .header-bottom .navbar-nav.active {
+        right: 0;
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 479.98px) {
+    .contact-content {
+        width: 100%;
+    }
+
+    .banner-text .banner-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .banner-text .banner-button a {
+        font-size: 12px;
+        padding: 2px 5px !important;
+    }
+
+    .welcome-button a {
+        font-size: 14px;
+        padding: 5px !important;
     }
 }
