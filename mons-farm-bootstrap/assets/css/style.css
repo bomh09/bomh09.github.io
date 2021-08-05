@@ -543,9 +543,9 @@ input[type="submit"] {
     }
 
     .header-bottom .navbar-nav {
-        position: fixed;
-        right: -100vw;
-        top: 119px;
+        position: absolute;
+        left: -100%;
+        top: 118px;
         background:rgba(131, 169, 44, 0.85);
         width: 100%;
         align-items: center;
@@ -554,7 +554,7 @@ input[type="submit"] {
     }
 
     .header-bottom .navbar-nav.active {
-        right: 0;
+        left: 0;
         padding: 20px 0;
     }
 }
