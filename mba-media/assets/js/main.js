@@ -26,24 +26,24 @@ tabs.forEach(function (tab, index) {
 
 // slide
 
-const chevronLeft = document.querySelector(
-  'ion-icon[name="chevron-back-outline"]'
-);
-const chevronRight = document.querySelector(
-  'ion-icon[name="chevron-forward-outline"]'
-);
-const slideItem = document.querySelectorAll(".slide-item");
-const slideItemActive = document.querySelector(".slide-item.active");
-
-chevronRight.addEventListener("click", function () {
-  slideItemActive.classList.remove("active");
-  slideItem[1].classList.add("active");
-});
-
-chevronLeft.addEventListener("click", function () {
-  slideItem[1].classList.remove("active");
-  slideItem[0].classList.add("active");
-});
+$(".owl-carousel").owlCarousel({
+  stagePadding: 0,
+  loop: false,
+  margin: 0,
+  nav: true,
+  dots: false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 1,
+    },
+  },
+}); 
 
 // show FAQ
 
@@ -52,17 +52,31 @@ const blockDescs = document.querySelectorAll(
   ".question-item .question-description"
 );
 
-arrows.forEach(function (arrow, index) {
-  const blockDesc = blockDescs[index];
+const questions = document.querySelectorAll(".question-item");
 
-  arrow.onclick = function () {
-    blockDesc.classList.toggle("active");
-    this.classList.toggle("active");
-    
-    if (this.name == "arrow-down-outline") {
-      arrow.name = "arrow-up-outline";
-    } else {
-      arrow.name = "arrow-down-outline";
-    }
+questions.forEach(function (ques, index) {
+  const blockDesc = blockDescs[index];
+  const arrow = arrows[index];
+
+  ques.onclick = function() {
+      blockDesc.classList.toggle("active");
+
+      if (arrow.name == "arrow-down-outline") {
+        arrow.name = "arrow-up-outline";
+      } else {
+        arrow.name = "arrow-down-outline";
+      }
   };
+
+});
+
+// menu mobile
+var mobile = document.querySelector('.menu-bar');
+var menu = document.querySelector('.header-menu');
+
+
+
+mobile.addEventListener('click', function() {
+  mobile.classList.toggle('active');
+  menu.classList.toggle('active');
 });

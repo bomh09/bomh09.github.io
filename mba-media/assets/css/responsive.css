@@ -1,0 +1,329 @@
+@media screen and (min-width: 1366px) and (max-width: 1639.98px) {
+    .container {
+        width: 1200px;
+    }
+
+    #header {
+        background-position: left -470px center;
+    }
+
+    .social-desc {
+        width: 70%;
+    }
+
+    #service .service-title {
+        width: 100%;
+    }
+
+    .service-category {
+        padding: 0;
+    }
+
+    #service .img-bottom {
+        width: 100%;
+        margin: 0;
+    }
+
+    .slide-item {
+        width: 100%;
+        padding: 50px 50px 0;
+    }
+
+    .slide-item.last .slide-quote {
+        height: 80px;
+    }
+
+    .reference-info-block .block-title {
+        margin-bottom: 100px;
+    }
+
+    .reference-info-tab .tab {
+        padding: 20px 9px;
+    }
+
+    .ablauf-top {
+        height: 1344px;
+    }
+
+    .question-item ion-icon {
+        right: 40px;
+    }
+}
+
+@media screen and (max-width: 1365.98px) {
+    #service .img-bottom {
+        margin: 0;
+        width: 100%;
+    }
+
+    .ablauf-content {
+        background-position: bottom -20px right 0;
+    }
+
+    .social-desc {
+        margin-right: 30px;
+    }
+
+    #service .service-title {
+        width: 100%;
+    }
+
+    .service-category {
+        padding: 0;
+    }
+
+    .slide-item {
+        padding: 85px 30px 0;
+    }
+
+    .reference-info-block .block-title {
+        margin-bottom: 100px;
+    }
+
+    .reference-info-tab .tab {
+        padding: 15px 9px;
+    }
+
+    .agentur-bottom {
+        margin-top: 100px;
+        padding: 200px 100px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1365.98px) {
+    .container {
+        width: 1200px;
+    }
+
+    #header {
+        background-position: -500px;
+    }
+
+    .social-desc {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 1279.98px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    #header {
+        background-image: none;
+        background-color: rgba(0, 0, 0, .1);
+    }
+
+    .header-service-top {
+        width: auto;
+    }
+
+    #service {
+        background-position: right -500px top 618px;
+    }
+
+    .reference-info-bottom {
+        margin-right: 30px;
+    }
+
+    .slide-item .slide-title {
+        font-size: 24px;
+    }
+
+    .slide-item .slide-desc {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023.98px) {
+    .social-desc {
+        width: 100%;
+        text-align: left;
+        margin-right: 0;
+        margin-bottom: 30px;
+        padding-right: 20px;
+    }
+
+    .header-service {
+        padding-bottom: 50px;
+    }
+
+    .service-title .service-title-item {
+        padding-left: 0;
+    }
+
+    #service {
+        background-position: right 0 top 618px;
+    }
+
+    .service-category .item-1 .service-desc {
+        color: #fff;
+    }
+
+    .service-category .item-3 {
+        margin-top: 0;
+    }
+
+    .slide-item.last .slide-desc,
+    .slide-item.last .slide-title {
+        margin-bottom: 10px;
+        line-height: 24px;
+    }
+
+    .reference-info-block .block-desc {
+        margin-left: 40px;
+    }
+
+    .ablauf-content {
+        background-position: bottom -100px right 0;
+    }
+
+}
+
+@media screen and (max-width: 1023.98px) {
+    .question-item ion-icon {
+        right: 50px;
+    }
+
+    .agentur-bottom {
+        padding: 100px 30px;
+    }
+
+    .kontakt-form form {
+        right: 30px;
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    .kontakt-form form input:not([type="submit"]) {
+        background: none;
+        color: #fff;
+    }
+
+    .kontakt-form form input:not([type="submit"])::placeholder {
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .header-top {
+        overflow: unset;
+    }
+
+    .header-menu {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        transition: all 0.5s;
+        background-color: #0AA4A1;
+        z-index: 10000;
+    }
+
+    .header-menu li {
+        padding: 20px;
+    }
+
+    .header-menu.active {
+        left: 0;
+    }
+
+    .menu-bar {
+        display: block;
+        align-self: flex-end;
+        z-index: 99999;
+    }
+
+    .menu-bar.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-bar.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-bar.active .bar:nth-child(3) {
+        transform: translateY(-16px) rotate(-45deg);
+    }
+
+    .header-bottom {
+        flex-direction: column-reverse;
+    }
+
+    .header-service {
+        padding-bottom: 0;
+        margin-top: 50px;
+    }
+
+    .header-social {
+        margin-top: 50px;
+    }
+
+    .social-desc {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .service-title .service-title-item {
+        padding-left: 0;
+    }
+
+    #service {
+        background-position: right 0 top 618px;
+    }
+
+    .service-category .item-1 .service-desc {
+        color: #fff;
+    }
+
+    .service-category .item-3 {
+        margin-top: 0;
+    }
+
+    #reference .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reference-info {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .reference-slide {
+        width: 100% !important;
+    }
+
+    .owl-theme .owl-nav {
+        top: -130px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .slide-item .slide-title {
+        font-size: 34px;
+        line-height: 37px;
+    }
+
+    .slide-item .slide-desc {
+        line-height: 37px;
+        font-size: 18px;
+    }
+
+    .question-item .question-description {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .agentur-question .question-item {
+        padding: 60px 60px 78px;
+    }
+
+    .question-item .question-description.active {
+        height: 200px
+    }
+}

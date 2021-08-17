@@ -7,6 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MBA - Media</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,12 +38,17 @@
                 <div class="header-top">
                     <a href="./" class="header-brand">MBA Media</a>
                     <ul class="header-menu">
-                        <li class="nav-item"><a href="#" class="nav-link">Service</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Reference</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Ablauf</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Agentur</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Kontakt</a></li>
+                        <li class="nav-item"><a href="#service" class="nav-link">Service</a></li>
+                        <li class="nav-item"><a href="#reference" class="nav-link">Reference</a></li>
+                        <li class="nav-item"><a href="#ablauf" class="nav-link">Ablauf</a></li>
+                        <li class="nav-item"><a href="#agentur" class="nav-link">Agentur</a></li>
+                        <li class="nav-item"><a href="#footer" class="nav-link">Kontakt</a></li>
                     </ul>
+                    <div class="menu-bar">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
                 </div>
     
                 <div class="header-bottom">
@@ -136,93 +156,89 @@
             <!-- Reference -->
             <div id="reference">
                 <div class="container">
-                    <div class="reference-info">
-                        <div class="reference-info-top">
-                            <div class="chervon">
-                                <ion-icon name="chevron-back-outline"></ion-icon>
-                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                    <div class="row">
+                        <div class="reference-info">
+                            <h3 class="reference-info-name">Erfolgsstory eines unserer Kunden</h3>
+                            <div class="reference-info-bottom">
+                                <div class="reference-info-block">
+                                    <div class="block-item active">
+                                        <h4 class="block-title">DIE AUSGANGSITUATION DES KUNDEN</h4>
+                                        <p class="block-desc">
+                                            Das Fitnessstudio zahlte hohe Werbekosten für Plakate, Flyer, Kino- und Radiowerbung. Diese
+                                            Maßnahmen führten zwar zu einigen Neumitgliedern, doch welche Maßnahme genau welche Erfolge
+                                            bei der Neukundenakquise erzielte, war nicht messbar.
+                                        </p>
+                                    </div>
+                                    <div class="block-item">
+                                        <h4 class="block-title">UNSERE ZIELFÜHRENDE STRATEGIE</h4>
+                                        <p class="block-desc">
+                                            Wir nutzten unser vielfach erprobtes Strategie-Konzept und erstellten Werbekampagnen auf
+                                            Social Media, die genau auf die Zielgruppe zugeschnitten sind.
+                                        </p>
+                                    </div>
+                                    <div class="block-item">
+                                        <h4 class="block-title">DAS ERFOLGREICHE ERGEBNIS</h4>
+                                        <p class="block-desc">
+                                            Mit einem Budget von 500 € konnten wir durch unsere Strategie insgesamt 34 Neumitglieder
+                                            gewinnen. Das ergibt einen Preis von lediglich 13,51€ für jedes Neumitglied.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="reference-info-tab">
+                                    <p class="tab active">Ausgangsituation</p>
+                                    <p class="tab">Unsere strategie</p>
+                                    <p class="tab">Erfolgreiche ergebnis</p>
+                                    <div class="bg-tab"></div>
+                                </div>
                             </div>
                         </div>
-                        <h3 class="reference-info-name">Erfolgsstory eines unserer Kunden</h3>
-                        <div class="reference-info-bottom">
-                            <div class="reference-info-block">
-                                <div class="block-item ausgangsituation active">
-                                    <h4 class="block-title">DIE AUSGANGSITUATION DES KUNDEN</h4>
-                                    <p class="block-desc">
-                                        Das Fitnessstudio zahlte hohe Werbekosten für Plakate, Flyer, Kino- und Radiowerbung. Diese
-                                        Maßnahmen führten zwar zu einigen Neumitgliedern, doch welche Maßnahme genau welche Erfolge
-                                        bei der Neukundenakquise erzielte, war nicht messbar.
-                                    </p>
+        
+                        <div class="owl-carousel owl-theme reference-slide">
+                            <div class="slide-item ">
+                                <div class="logo-icon">
+                                    <div class="top-left"></div>
+                                    <div class="top-right"></div>
+                                    <p>BeispielLOGO</p>
                                 </div>
-                                <div class="block-item unsere">
-                                    <h4 class="block-title">UNSERE ZIELFÜHRENDE STRATEGIE</h4>
-                                    <p class="block-desc">
-                                        Wir nutzten unser vielfach erprobtes Strategie-Konzept und erstellten Werbekampagnen auf
-                                        Social Media, die genau auf die Zielgruppe zugeschnitten sind.
-                                    </p>
-                                </div>
-                                <div class="block-item ergebnis">
-                                    <h4 class="block-title">DAS ERFOLGREICHE ERGEBNIS</h4>
-                                    <p class="block-desc">
-                                        Mit einem Budget von 500 € konnten wir durch unsere Strategie insgesamt 34 Neumitglieder
-                                        gewinnen. Das ergibt einen Preis von lediglich 13,51€ für jedes Neumitglied.
-                                    </p>
+                                <div class="slide-quote">"</div>
+                                <h3 class="slide-title">6 Anfragen in 3 Wochen durch den organischen Ausbau von Social
+                                    Media.</h3>
+                                <p class="slide-desc">
+                                    Das Team von MBA-Media ist klasse, sehr engagiert und bei Anliegen oder Fragen immer
+                                    erreichbar. Die Teammitglieder übernehmen in meinem Tischlerei-Betrieb die Erstellung
+                                    und Planung des Contents und der Grafiken für unsere Social- Media-Kanäle. Ich kann sie
+                                    guten Gewissens weiterempfehlen, auf die Jungs und Mädels ist Verlass!
+                                </p>
+                                <div class="slide-footer">
+                                    <h4>LUKAS SCHULTE</h4>
+                                    <p>Inhaber/Geschäftsführer</p>
                                 </div>
                             </div>
-                            <div class="reference-info-tab">
-                                <p class="tab active">Ausgangsituation</p>
-                                <p class="tab">Unsere strategie</p>
-                                <p class="tab">Erfolgreiche ergebnis</p>
-                                <div class="bg-tab"></div>
-                            </div>
-                        </div>
-                    </div>
     
-                    <div class="reference-slide">
-                        <div class="slide-item active">
-                            <div class="logo-icon">
-                                <div class="top-left"></div>
-                                <div class="top-right"></div>
-                                <p>BeispielLOGO</p>
+                            <div class="slide-item last">
+                                    <div class="logo-icon">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <p>BeispielLOGO</p>
+                                    </div>
+                                <div class="slide-quote">"</div>
+                                    <h3 class="slide-title">Ein junges Unternehmen, welches wir gern weiterempfehlen.</h3>
+                                    <p class="slide-desc">
+                                    Wir sind der Überzeugung, wenn man etwas professionell umgesetzt haben möchte, sollten
+                                    es auch Profis tun. Die Pflege unseres Instagram- und Facebook-Accounts, die
+                                    Kommunikation mit Interessenten, die über Social Media auf unser Autohaus aufmerksam
+                                    werden und die richtige „Ansprache“ der Zielgruppe wollten wir nicht dem Zufall
+                                    überlassen oder irgendwie nebenbei erledigen, sondern professionell betreut wissen. Wenn
+                                    man etwas macht, dann richtig. Aus diesem Grund haben wir diesen Bereich an MBA Media
+                                    abgegeben. Die monatlichen Postingpläne sind sehr professionell und überlegt, die
+                                    Zusammenarbeit erfolgt „auf kurzem Weg“ und unsere Ansprechpartner bei MBA Media sind
+                                    sehr engagiert.
+                                    </p>
+                                    <div class="slide-footer">
+                                        <h4>INIS HEIDEKRÜGER</h4>
+                                        <p>Autohaus Kläne</p>
+                                    </div>
                             </div>
-                            <div class="slide-quote">"</div>
-                            <h3 class="slide-title">6 Anfragen in 3 Wochen durch den organischen Ausbau von Social
-                                Media.</h3>
-                            <p class="slide-desc">
-                                Das Team von MBA-Media ist klasse, sehr engagiert und bei Anliegen oder Fragen immer
-                                erreichbar. Die Teammitglieder übernehmen in meinem Tischlerei-Betrieb die Erstellung
-                                und Planung des Contents und der Grafiken für unsere Social- Media-Kanäle. Ich kann sie
-                                guten Gewissens weiterempfehlen, auf die Jungs und Mädels ist Verlass!
-                            </p>
-                            <div class="slide-footer">
-                                <h4>LUKAS SCHULTE</h4>
-                                <p>Inhaber/Geschäftsführer</p>
-                            </div>
-                        </div>
-
-                        <div class="slide-item">
-                             <div class="logo-icon">
-                                 <div class="top-left"></div>
-                                 <div class="top-right"></div>
-                                 <p>BeispielLOGO</p>
-                             </div>
-                            <div class="slide-quote">"</div>
-                             <h3 class="slide-title">Ein junges Unternehmen, welches wir gern weiterempfehlen.</h3>
-                             <p class="slide-desc">
-                                Wir sind der Überzeugung, wenn man etwas professionell umgesetzt haben möchte, sollten
-                                es auch Profis tun. Die Pflege unseres Instagram- und Facebook-Accounts, die
-                                Kommunikation mit Interessenten, die über Social Media auf unser Autohaus aufmerksam
-                                werden und die richtige „Ansprache“ der Zielgruppe wollten wir nicht dem Zufall
-                                überlassen oder irgendwie nebenbei erledigen, sondern professionell betreut wissen. Wenn
-                                man etwas macht, dann richtig. Aus diesem Grund haben wir diesen Bereich an MBA Media
-                                abgegeben. Die monatlichen Postingpläne sind sehr professionell und überlegt, die
-                                Zusammenarbeit erfolgt „auf kurzem Weg“ und unsere Ansprechpartner bei MBA Media sind
-                                sehr engagiert.
-                             </p>
-                             <div class="slide-footer">
-                                 <h4>INIS HEIDEKRÜGER</h4>
-                                 <p>Autohaus Kläne</p>
-                             </div>
                         </div>
                     </div>
                 </div>
@@ -233,7 +249,7 @@
                 <div class="ablauf-top">
                     <h2 class="ablauf-top-desc">So können Sie mit uns zusammen arbeiten</h2>
                 </div>
-                <div class="container">
+                <div class="container" style="overflow: hidden;">
                     <div class="ablauf-content">
                         <div class="ablauf-content-item">
                             <h3 class="ablauf-title">Anfrage</h3>
@@ -394,6 +410,7 @@
             </div>
         </div>
     </div>
+
     <script src="./assets/js/main.js"></script>
 </body>
 
