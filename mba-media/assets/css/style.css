@@ -442,6 +442,7 @@ li {
     position: relative;
     z-index: 100;
     text-align: center;
+    word-break: break-all;
 }
 
 .reference-info-tab .bg-tab {
