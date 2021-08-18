@@ -298,6 +298,7 @@
 
     .agentur-uber {
         flex-wrap: wrap;
+        margin-bottom: 100px;
     }
 
     .agentur-uber .agentur-uber-title {
@@ -403,6 +404,7 @@
 
     .service-category .item-3 {
         margin-top: 0;
+        margin-bottom: 100px;
     }
 
     #reference .row {
@@ -419,6 +421,10 @@
         width: 100% !important;
     }
 
+    .slide-item {
+        padding: 30px 20px 0;
+    }
+
     .owl-theme .owl-nav {
         top: -130px;
         left: 50%;
@@ -431,19 +437,37 @@
 
     .slide-item .slide-desc {
         font-size: 14px;
+        display: -webkit-box;
+        -webkit-line-clamp: 15;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .ablauf-top {
+        height: 1200px;
     }
 
     .question-item .question-description {
         width: 100%;
-        text-align: justify;
+        overflow: auto;
+    }
+
+    .question-item ion-icon {
+        right: 10px;
+        top: 70px;
+    }
+
+    .agentur-question .question-title {
+        font-size: 24px;
     }
 
     .agentur-question .question-item {
-        padding: 60px 60px 78px;
+        padding: 60px 30px 78px;
     }
 
     .question-item .question-description.active {
-        height: 200px
+        height: 200px;
     }
 
     .kontakt-form form {
@@ -474,5 +498,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    #footer {
+        padding-bottom: 50px;
     }
 }
