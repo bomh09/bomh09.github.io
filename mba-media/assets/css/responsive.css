@@ -111,8 +111,19 @@
     }
 
     #header {
-        background-image: none;
-        background-color: rgba(0, 0, 0, .1);
+        /* background-color: rgba(0, 0, 0, .1); */
+        background: linear-gradient(to top, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),
+        url(../images/Mask\ Group\ 5.png);
+        background-size: cover;
+    }
+
+    .menu-bar .bar {
+        background-color: #fff;
+    }
+
+    .header-top .header-menu .nav-link,
+    .service-content-item p {
+        color: #fff;
     }
 
     .header-service-top {
