@@ -500,6 +500,10 @@
         align-items: center;
     }
 
+    .service-content-item p {
+        text-align: center;
+    }
+
     #footer {
         padding-bottom: 50px;
     }
