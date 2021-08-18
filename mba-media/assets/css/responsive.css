@@ -277,7 +277,6 @@
     .social-desc {
         width: 100%;
         margin-right: 0;
-        color: #000;
     }
 
     .header-service-content {
@@ -512,6 +511,10 @@
 
     .service-content-item p {
         text-align: center;
+    }
+
+    .service-content-item p::after {
+        width: 90%;
     }
 
     #footer {
