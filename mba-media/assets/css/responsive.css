@@ -112,7 +112,7 @@
 
     #header {
         background: linear-gradient(to top, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),
-        url(../images/Mask\ Group\ 5.png);
+            url(../images/Mask\ Group\ 5.png);
         background-size: cover;
     }
 
@@ -327,6 +327,8 @@
     .ablauf-bottom {
         margin-top: 100px;
         height: 400px;
+        background-size: cover;
+        background-position: center;
     }
 
     .header-top .header-brand {
@@ -357,7 +359,7 @@
         width: 100%;
         margin: 0;
     }
-    
+
     .reference-info-name,
     .agentur-bottom .agentur-bottom-title,
     .service-category .item-3,
