@@ -227,7 +227,7 @@ shareButton.addEventListener("click", (event) => {
     navigator
       .share({
         title: "WebShare API Demo",
-        url: "https://codepen.io/ayoisaiah/pen/YbNazJ",
+        url: "https://bomh09.github.io/",
       })
       .then(() => {
         console.log("Thanks for sharing!");
